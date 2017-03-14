@@ -1,0 +1,66 @@
+DotD In-Raid Tier Display Tool
+#----------------------------------------------------------------------------#
+_______________
+--:: ABOUT ::--
+
+This is a tool that automatically identifies whatever raid you're hitting at
+the time and display a convenient tooltip that indicates that raid's
+AP (if applicable), Optimal Share, Maximal Share, and other relevent tiers.
+
+I wrote this because ShortStabber asked and I was also really tired of looking
+up tier data, especially for raids that tend to move fairly quickly or such
+raids get posted to the chat while I'm not looking there.
+
+_______________
+--:: USAGE ::--
+
+You'll need AutoHotkey_L installed. I haven't checked if AHK vanilla works with
+it but I built and debugged the script in AutoHotkey ANSI 32-bit v 1.1.22.7
+During installation, you need to have .ahk files associated with it
+so you can run my script.
+
+To start the script, double-click main.ahk.
+If you don't see anything immediately happen, that's normal.
+You can see it in the task tray where a little green "H" icon is. That's me!
+
+This script is controlled via keyboard shortcuts. The controls:
+
+F1 = Turn on/off raid monitoring.
+F2 = (Debug only!) Add new raid to database
+F4 = Exit the application
+
+_________________________
+--:: VERSION HISTORY ::--
+
+0.10 - The script seems to work? Left it on debug mode because I still have a
+       long way to go in filling out the raid database. 
+
+_______________
+--:: NOTES ::--
+
+This is a Windows-only tool. Sorry *nix, Mac people. Was never able to figure
+out how to get IronAHK to work for cross-platform compatibility.
+
+Also, the script expects all color depths to be at least 24 bit. Detection
+runs the risk of failing otherwise.
+
+________________________
+--:: SPECIAL THANKS ::--
+
+Dusan, Idrinth, and Warric for their inline tier script, from where most of the
+raid tier data was transcribed.
+
+ShortStabber. Their interest in the and the desire (both SS' and mine)
+for soemthing easier than actually having to look up tiers and potentially
+missing fast-moving raids. 
+
+
+
+
+
+
+
+
+
+
+ 
