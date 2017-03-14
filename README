@@ -33,7 +33,10 @@ _________________________
 --:: VERSION HISTORY ::--
 
 0.10 - The script seems to work? Left it on debug mode because I still have a
-       long way to go in filling out the raid database. 
+       long way to go in filling out the raid database.
+0.11 - Figuring out this Git thing. Added more raids to database since
+       version 0.10 (not recorded). Also added a license because I hear that's
+       an important thing to have if people are going to be using this tool.
 
 _______________
 --:: NOTES ::--
