@@ -29,6 +29,17 @@ F1 = Turn on/off raid monitoring.
 F2 = (Debug only!) Add new raid to database
 F4 = Exit the application
 
+Now, open up Dawn of the Dragons (if you aren't already playing) and
+enter any raid. If the script recognizes the raid graphics, it should
+display tier information about it in tooltips just below the magics.
+
+_______________________________________
+--:: SYMBOLS USED IN THE TIER LIST ::--
+
+  ^  Indicates AP. The minimum damage needed to obtain achievement credit.
+  *  Indicates OS. This is the best (or optimal) loot per damage.
+     Some raids have more than one.
+
 _________________________
 --:: VERSION HISTORY ::--
 
@@ -37,7 +48,9 @@ _________________________
 0.11 - Figuring out this Git thing. Added more raids to database since
        version 0.10 (not recorded). Also added a license because I hear that's
        an important thing to have if people are going to be using this tool.
-
+0.12 - Added all the newer guild raids, put in placeholders for the other
+       guild raids, and filled in a few gaps in the Z10+ raid list.
+       Also updated this doc to explain those funny symbols in the tier chart.
 _______________
 --:: NOTES ::--
 
