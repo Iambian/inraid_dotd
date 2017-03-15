@@ -263,7 +263,7 @@ isGameWinActive()
   return WinActive("Dawn of the Dragons")
 }
 
-;---------------------
+;--------------------------------------------------------------------
 AddNewEntry()
 {
   Global
@@ -322,6 +322,7 @@ AddNewEntry()
     Sleep 1000
   return
 }
+;--------------------------------------------------------------------
 GuiClose:
 gui_opened := 0
 Gui,destroy
@@ -367,7 +368,10 @@ return
 
 EDIT_ACCEPT:
 ;using: EDIT_RAIDNAME, EDIT_RAIDDATA
-Gui,Submit
+Gui,Submit,NoHide
+;Do not accept an entry with an empty raid name.
+if (EDIT_RAIDNAME="")
+  return
 ;Add empty entry to database if RGB and NAME does not match any entries.
 s=0 
 Loop,%a_len%
@@ -389,9 +393,15 @@ if (!s)
   
 }
 ;update all entries marked with EDIT_RAIDNAME with contents of EDIT_RAIDDATA
+;Ensure that a blank entry in raiddata does not foul up the database.
+;because it will for some reason.
+If (EDIT_RAIDDATA="")
+  s:=" "
+else
+  s:=EDIT_RAIDDATA
 Loop,%a_len%
   if (a%A_Index%_n=EDIT_RAIDNAME)
-    a%A_Index%_s := EDIT_RAIDDATA
+    a%A_Index%_s := s
 
 goto GuiClose
 
