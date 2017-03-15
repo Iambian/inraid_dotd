@@ -109,6 +109,10 @@ _________________________
 0.13 - Minor coverage updates in commonly seen Z10+ raids.
        Added more symbols and notes to documentation.
        Added instructions on how to make changes to the raid database.
+0.14 - Barely an update. Added slightly more stuff to the database and
+       a tip in the documentation about something that always escapes my mind
+       until I run into that particular problem again.
+0.15 - More raid db stuff. Added a note about animations and lack of support.
 
 _________________________________________________
 --:: NOTES AND TROUBLESHOOTING ::--
@@ -126,8 +130,20 @@ hope to whatever deity you pray to that the color interpolation algorithm
 used to smooth out pixels in your zoomed state doesn't change behind
 your back. Too much work.
 
+DISABLE ANIMATIONS. Some raids are animated. We don't put any animated frames
+into the database and I'm not really sure that's possible. At least, not
+without some serious frame-by-frame dedication. Too much work.
+
 Campaigns aren't supported yet. For now, you'll end up with some false
 positives for campaign bosses such as Horthania and Imryx.
+
+Sometimes the tier information covers up stuff on the raid window that you
+need to see or click, such as campaign modifiers or the quick legion/item set
+change panel. You should be able to click the tooltip to dismiss it for half
+a second. I know it isn't that long but it's better than constantly stopping
+and restarting the monitor. I'll probably make it so that it'll go away
+temporarily if any tooltip is being hovered over. Something to do, I suppose?
+
 
 _________________
 --:: LICENSE ::--
