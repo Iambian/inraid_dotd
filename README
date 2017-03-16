@@ -112,7 +112,14 @@ _________________________
 0.14 - Barely an update. Added slightly more stuff to the database and
        a tip in the documentation about something that always escapes my mind
        until I run into that particular problem again.
-0.15 - More raid db stuff. Added a note about animations and lack of support.
+0.15 - Added placeholders for most Z1-Z9 raids and their many frames. 
+       Added a note about animations and lack of support.
+0.16 - Cleaned up icy whelp slobber.
+       Set it up so that debug mode is disabled by default. To enable it, create
+       a file named "DEBUG" in the same folder as the .ahk file since sometimes
+       an end-user database would mysteriously get chewed up.
+       Also, db coverage update.
+       
 
 _________________________________________________
 --:: NOTES AND TROUBLESHOOTING ::--

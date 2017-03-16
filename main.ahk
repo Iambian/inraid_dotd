@@ -49,7 +49,10 @@ curraid:=""
 tooltips = 0
 test= null
 gui_opened = 0
-debug_mode = 1
+ifexist,DEBUG
+  debug_mode = 1
+else
+  debug_mode = 0
 timer_state = 0
 anchor_x = 0
 anchor_y = 0
@@ -154,13 +157,13 @@ if (m1_n=curraid and curraid!="")
 curraid:=m1_n
   ;initial calibration - 348,124
 cx := 348-294
-cy := 124+132
+cy := 124+127
 Loop,%m_len%
 {
   tooltips++
   s := m%A_Index%_n " : " m%A_Index%_s
   Tooltip,%s%,%cx%,%cy%,%tooltips%
-  cy+=25
+  cy+=30
 }
 
 Return
