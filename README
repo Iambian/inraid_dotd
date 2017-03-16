@@ -129,6 +129,8 @@ _________________________
 0.18 - Docs updated to make db maintenance instructions easier to follow.
        Docs update for special thanks.
        Updated db coverage.
+0.19 - Fixed overlapping tooltips issue.
+       Updated db coverage and added tiers to placeholders
 
 _________________________________________________
 --:: NOTES AND TROUBLESHOOTING ::--

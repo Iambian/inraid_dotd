@@ -154,6 +154,8 @@ if (!m_len)
 }
 if (m1_n=curraid and curraid!="")
   return
+if (curraid!=m1_n)
+  remove_tooltips()
 curraid:=m1_n
   ;initial calibration - 348,124
 cx := anchor_x-294
