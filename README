@@ -53,41 +53,38 @@ display tier information about it in tooltips just below the magics.
 _________________________________________________________
 --:: ADDING RAIDS TO THE DATABASE AND MAINTAINING IT ::--
 
-Keep in mind that any raids that you add will not be preserved if you have
-to download a new version of my script and replace raiddb.dat.
-Sorry, I have no way to merge databases yet.
+0. There is no database merge tool. If you replace raiddb.dat with any updated
+   versions of my script, you will lose all progress. Also, don't quickly cycle
+   the script or do anything too fast. There has been reports of the database
+   being eaten (truncated) by the script, so keep a backup at all times. 
+   
+1. Your script must be in DEBUG mode. Create an empty file named DEBUG in the
+   directory and re-run the script to put it into debug mode.
+   
+2. Push F1 to toggle on the raid monitor.
+   Enter any raid and wait for the raid graphics to load.
+   If the tier tooltip is incorrect or doesn't display, continue.
+   
+3. Push F2 to bring up the editor dialog. Once the dialog appears, the raid's
+   identifying pixels will have been recorded. You can continue to play the game
+   or you can start editing raid/tier information in the dialog.
+   
+4. Scan the database to see if the raid is already there.
+   Some names may be abbreviated or be called other things. Check carefully.
+   If it is there, click it and the name/data fields will fill out.
+   If it is not, enter the data in the name/data fields, then click Add/Update
+   
+5. Some raids share graphics with another raid.
+   Do step (4) anyway and all matching raids will display.
+   You can check (and click) in the "Raid graphics also shared with" list.
+   
+6. If you mess something up, you can open raiddb.dat in a text editor and
+   delete the offending lines. The database is a plaintext CSV file formatted:
+   pixelcolor1, pixelcolor2, pixelcolor3, raidname, raidtier
 
-When you enter a raid that does not pop up with a tier listing, push F2 to
-bring up the database editor tool. It will only pop up if the script can
-tell that you're actually in a raid.
-
-Once the dialog pops up over the chat area, the pixels needed to identify
-that raid has been preserved and you may then proceed to hit the raid if
-you need to if you're trying to play the game and add raids to the db at
-the same time.
-
-First scan the list to see if the raid isn't already in the database. It's
-entirely possible that it's there, but does not recognize that particular
-raid background image. Click the name to bring up its tier information.
-You may then edit the tier information, or continue by pushing the
-Add/Update button. When the box closes, the script is fully updated with
-the raid information.
-
-Sometimes raids share graphics with another raid. It is possible to associate
-the same graphic with more than one raid. Just give it another name and
-tier information, or select a preexisting raid off the database if it already
-exists, then click Add/Update.
-
-The raiddb.dat file only updates when the script is fully shut down.
-Shut down the script by pushing F4 at any time.
-
-Any new entries that are added are appended to the bottom of the script.
-If you mess something up, you can manually delete them here.
-
-In order to sort the script, you'll need Python 2.7.x installed. Once you
-get that, you'll need to run dbsort.py. I probably should've done it in
-AHK, but it's just far, far easier in Python.
-
+7. You can optionally sort the database by raid name by running dbsort.py
+   You'll need Python 2.7.* installed before you can run that script.
+   Apologies for the additional requirements.
 _______________________________________
 --:: SYMBOLS USED IN THE TIER LIST ::--
 
@@ -128,6 +125,9 @@ _________________________
        home button instead of a constant position that matched where the home
        button was on my machine and setup. Oops.
        Updated the docs to make it more clear where and how to get AutoHotkey.
+       Updated db coverage.
+0.18 - Docs updated to make db maintenance instructions easier to follow.
+       Docs update for special thanks.
        Updated db coverage.
 
 _________________________________________________
@@ -180,13 +180,7 @@ ShortStabber. Their interest in the and the desire (both SS' and mine)
 for soemthing easier than actually having to look up tiers and potentially
 missing fast-moving raids. 
 
-
-
-
-
-
-
-
-
+blub. For beta testing and being such an awesome guild leader.
+And for caring for my horde of icy whelps while I'm off raiding.
 
  
