@@ -156,8 +156,8 @@ if (m1_n=curraid and curraid!="")
   return
 curraid:=m1_n
   ;initial calibration - 348,124
-cx := 348-294
-cy := 124+127
+cx := anchor_x-294
+cy := anchor_y+130
 Loop,%m_len%
 {
   tooltips++

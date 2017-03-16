@@ -25,10 +25,15 @@ raids get posted to the chat while I'm not looking there.
 _______________
 --:: USAGE ::--
 
-You'll need AutoHotkey_L installed. I haven't checked if AHK vanilla works
-with it but I built and debugged the script in AutoHotkey ANSI 32-bit
-version 1.1.22.7. During installation, you need to have .ahk files associated
-with AutoHotkey so you can run my script.
+You'll need AutoHotkey 1.1.* (also known as AutoHotkey_L) installed on your
+machine in order to run my script. You can get it from this page:
+
+https://autohotkey.com/download/1.1/
+
+You'll want to download the the installer file that is closest to the top.
+That's how you'll know you're getting the latest version of AutoHotkey 1.1.*
+Make sure that .ahk files are associated with AutoHotkey and that
+double-clicking them runs the script instead of edits them.
 
 To start the script, double-click main.ahk.
 If you don't see anything immediately happen, that's normal.
@@ -119,7 +124,11 @@ _________________________
        a file named "DEBUG" in the same folder as the .ahk file since sometimes
        an end-user database would mysteriously get chewed up.
        Also, db coverage update.
-       
+0.17 - Fixed the script to actually anchor the raid tier tooltip relative to the
+       home button instead of a constant position that matched where the home
+       button was on my machine and setup. Oops.
+       Updated the docs to make it more clear where and how to get AutoHotkey.
+       Updated db coverage.
 
 _________________________________________________
 --:: NOTES AND TROUBLESHOOTING ::--
