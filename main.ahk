@@ -45,6 +45,7 @@ SetControlDelay, -1
 c1 = 0
 c2 = 0
 c3 = 0
+lootpix = 0
 curraid:="" 
 tooltips = 0
 test= null
@@ -67,6 +68,7 @@ if FileExist("raiddb.dat") {
   Loop,READ,raiddb.dat
   {
     a_len++
+    a%a_len%_c := 0  ;compatibility with older database
     Loop,PARSE,A_LoopReadLine,CSV
     {
       if (A_Index=1)
@@ -79,6 +81,8 @@ if FileExist("raiddb.dat") {
         a%a_len%_n:=A_LoopField
       if (A_Index=5)
         a%a_len%_s:=A_LoopField
+      if (A_Index=6)
+        a%a_len%_c:=A_LoopField
     }
   }
   ToolTip
@@ -86,25 +90,7 @@ if FileExist("raiddb.dat") {
 ;---------------------
 OnExit,SystemCleanup
 Return
-
-F4::
-ExitApp
-
-F3::
-if (!debug_mode)
-  return
-FindAnchor(x,y)
-c1:=(x+52)
-c2:=(y+156)
-ToolTip,LOC1,%c1%,%c2%,1
-c1:=(x+182)
-c2:=(y+216)
-ToolTip,LOC2,%c1%,%c2%,2
-c1:=(x+132)
-c2:=(y+546)
-ToolTip,LOC3,%c1%,%c2%,3
-tooltips=3
-Return
+;###############################################################################
 
 F1::
 timer_state := !timer_state
@@ -118,31 +104,39 @@ if (timer_state) {
   curraid:="" 
 }
 Return
-
+;---------------------------
 F2::
 if (!debug_mode)
   Return
 AddNewEntry()
 Return
-
-SystemCleanup:
+;---------------------------
+F3::
 if (!debug_mode)
-  ExitApp
-;in debug mode, allow writeback to database
-IfExist,raiddb.dat
-  FileDelete,raiddb.dat
-Loop,%a_len%
-{
-  s := a%A_Index%_1 "," a%A_Index%_2 "," a%A_Index%_3 ","
-  s .= """" a%A_Index%_n ""","
-  s .= """" a%A_Index%_s """`n"
-  FileAppend,%s%,raiddb.dat
-}
-
-
-
-ToolTip,Exiting debug mode app,0,0
+  return
+FindAnchor(x,y)
+;calib 348,124
+ToolTip,CALIB %x%`,%y%,0,0,4
+c1:=(x+52)
+c2:=(y+156)
+ToolTip,LOC1,%c1%,%c2%,1
+c1:=(x+182)
+c2:=(y+216)
+ToolTip,LOC2,%c1%,%c2%,2
+c1:=(x+132)
+c2:=(y+546)
+ToolTip,LOC3,%c1%,%c2%,3
+tooltips=3
+;100,730 -> -248,606
+c1:=(x-248)
+c2:=(y+606)
+PixelGetColor,rgbl,%c1%,%c2%
+ToolTip,LOOTBOX:%rgbl%,0,20,5
+Return
+;---------------------------
+F4::
 ExitApp
+
 ;*******************************************************************************
 raidcheck:
 FindMatch()
@@ -183,92 +177,67 @@ remove_tooltips()
   return 0
 }
 
+GuiClose:
+gui_opened := 0
+Gui,destroy
+Return
 
-ShowMsg(ByRef string,disptype=0)
+FUNC_DATABASE:
+Gui,Submit,NoHide
+fill_out_display(EDIT_DATABASE)
+return
+
+FUNC_MATCHING:
+Gui,Submit,NoHide
+fill_out_display(EDIT_MATCHING)
+return
+
+EDIT_ACCEPT:
+;using: EDIT_RAIDNAME, EDIT_RAIDDATA
+Gui,Submit,NoHide
+;Do not accept an entry with an empty raid name.
+if (EDIT_RAIDNAME="")
+  return
+;Add empty entry to database if RGB and NAME does not match any entries.
+s=0 
+Loop,%a_len%
 {
-  global msg_display_type
-  if (!disptype)
-    disptype:=msg_display_type
-  if (disptype="both" or disptype="tool")
+  a := A_Index
+  if (c1=a%a%_1 && c2=a%a%_2 && c3=a%a%_3 && EDIT_RAIDNAME=a%a%_n)
   {
-    ToolTip,%string%,0,0,20
-    SetTimer,removetooltip,-2500
+    s=1
+    break
   }
-  if (disptype="both" or disptype="tray")
-  {
-    TrayTip,In-Raid DotD Notice,%string%
-  }
-  
 }
-
-;returns number of entries that matched the given three point color codes
-FindMatch()
+if (!s)
 {
-  global
-  local rgb1,rgb2,rgb3,a,b,c,r
-  m_len:=0
-  if (GetGamePixels(rgb1,rgb2,rgb3))
-    return 0
-  ;print("src [" a_index "] (" rgb1 "," rgb2 "," rgb3 ")")
-  Loop,%a_len%
-  {
-    ;print("chk[" a_index "] (" a%a_index%_1 "," a%a_index%_2 "," a%a_index%_3 ")")
-    if (rgb1=a%a_index%_1 && rgb2=a%a_index%_2 && rgb3=a%a_index%_3)
-    {
-      m_len++
-      m%m_len%_n := a%a_index%_n
-      m%m_len%_s := a%a_index%_s
-    }
-  }
-  return m_len
+    a_len++
+    a%a_len%_1:=c1
+    a%a_len%_2:=c2
+    a%a_len%_3:=c3
+    a%a_len%_n:=EDIT_RAIDNAME
+    if (lootpix=0x795C2F)
+      a%a_len%_c=0
+    else
+      a%a_len%_c=1
 }
-;Values are actually returned in the variables supplied.
-;If an error happened, return value is 1, else 0
-GetGamePixels(ByRef rgb1,ByRef rgb2, ByRef rgb3)
-{
-  if (FindAnchor(x,y))
-    return 1
-  PixelGetColor rgbt,(x+57),(y+611)  ;ref: 0x275A61
-  if (rgbt!=0x275A61)
-    return 1
-  PixelGetColor rgb1,(x+52),(y+156)
-  PixelGetColor rgb2,(x+182),(y+216)
-  PixelGetColor rgb3,(x+132),(y+546)
-  return 0
-}
+;update all entries marked with EDIT_RAIDNAME with contents of EDIT_RAIDDATA
+;Ensure that a blank entry in raiddata does not foul up the database.
+;because it will for some reason.
+If (EDIT_RAIDDATA="")
+  s:=" "
+else
+  s:=EDIT_RAIDDATA
+Loop,%a_len%
+  if (a%A_Index%_n=EDIT_RAIDNAME)
+    a%A_Index%_s := s
 
-FindAnchor(Byref x, Byref y)
-{
-  Global anchor_x,anchor_y,anchor_f
-  cwd:=A_ScriptDir
-  ImageSearch,x1,y1,(anchor_x-1),(anchor_y-1),(anchor_x+40),(anchor_y+40),home.bmp
-  if (ErrorLevel)
-  {
-    WinGetPos,wx,wy,ww,wh,A
-    ImageSearch,x2,y2,0,0,ww,wh,home.bmp
-    if (ErrorLevel)
-      return 1
-    x := x2
-    y := y2
-  } else {
-    x := x1
-    y := y1
-  }
-  anchor_x := x
-  anchor_y := y
-  return 0
-}
+goto GuiClose
 
+EDIT_CANCEL:
+goto GuiClose
 
-
-
-
-isGameWinActive()
-{
-  return WinActive("Dawn of the Dragons")
-}
-
-;--------------------------------------------------------------------
+;===============================================================================
 AddNewEntry()
 {
   Global
@@ -278,6 +247,9 @@ AddNewEntry()
   matches := FindMatch()
   if (GetGamePixels(c1,c2,c3))
     return 1
+  a:=(anchor_x-248)
+  b:=(anchor_y+606)
+  PixelGetColor,lootpix,%a%,%b%
   ;Gui construc
   Gui,Add,Text,x5 y5 w190 h15 Center,Raid Name
   Gui,Add,Edit,x5 y25 w190 h23 vEDIT_RAIDNAME
@@ -327,25 +299,66 @@ AddNewEntry()
     Sleep 1000
   return
 }
-;--------------------------------------------------------------------
-GuiClose:
-gui_opened := 0
-Gui,destroy
-Return
-
-
-print(str)
+;----------------------------------------------------------------------------
+FindAnchor(Byref x, Byref y)
 {
-  OutputDebug,%str%
+  Global anchor_x,anchor_y,anchor_f
+  cwd:=A_ScriptDir
+  ImageSearch,x1,y1,(anchor_x-1),(anchor_y-1),(anchor_x+40),(anchor_y+40),home.bmp
+  if (ErrorLevel)
+  {
+    WinGetPos,wx,wy,ww,wh,A
+    ImageSearch,x2,y2,0,0,ww,wh,home.bmp
+    if (ErrorLevel)
+      return 1
+    x := x2
+    y := y2
+  } else {
+    x := x1
+    y := y1
+  }
+  anchor_x := x
+  anchor_y := y
+  return 0
 }
 
-search_db_by_name(v)
+;returns number of entries that matched the given three point color codes
+FindMatch()
 {
-  Global
+  global
+  local rgb1,rgb2,rgb3,ltpix,a,b,c,r
+  m_len:=0
+  if (GetGamePixels(rgb1,rgb2,rgb3))
+    return 0
+  a:=(anchor_x-248)
+  b:=(anchor_y+606)
+  PixelGetColor,ltpix,%a%,%b%
+  ;print("src [" a_index "] (" rgb1 "," rgb2 "," rgb3 ")")
   Loop,%a_len%
-    if (a%A_Index%_n=v)
-      return a%A_Index%_s
-  Return ""
+  {
+    ;print("chk[" a_index "] (" a%a_index%_1 "," a%a_index%_2 "," a%a_index%_3 ")")
+    if (rgb1=a%a_index%_1 && rgb2=a%a_index%_2 && rgb3=a%a_index%_3)
+      if ((ltpix=0x795C2F && (!a%a_index%_c)) || a%a_index%_c)
+      {
+        m_len++
+        m%m_len%_n := a%a_index%_n
+        m%m_len%_s := a%a_index%_s
+      }
+  }
+  return m_len
+}
+
+GetGamePixels(ByRef rgb1,ByRef rgb2, ByRef rgb3)
+{
+  if (FindAnchor(x,y))
+    return 1
+  PixelGetColor rgbt,(x+57),(y+611)  ;ref: 0x275A61
+  if (rgbt!=0x275A61)
+    return 1
+  PixelGetColor rgb1,(x+52),(y+156)
+  PixelGetColor rgb2,(x+182),(y+216)
+  PixelGetColor rgb3,(x+132),(y+546)
+  return 0
 }
 
 fill_out_display(v)
@@ -361,59 +374,56 @@ fill_out_display(v)
   return
 }
 
-FUNC_DATABASE:
-Gui,Submit,NoHide
-fill_out_display(EDIT_DATABASE)
-return
-
-FUNC_MATCHING:
-Gui,Submit,NoHide
-fill_out_display(EDIT_MATCHING)
-return
-
-EDIT_ACCEPT:
-;using: EDIT_RAIDNAME, EDIT_RAIDDATA
-Gui,Submit,NoHide
-;Do not accept an entry with an empty raid name.
-if (EDIT_RAIDNAME="")
-  return
-;Add empty entry to database if RGB and NAME does not match any entries.
-s=0 
-Loop,%a_len%
+search_db_by_name(v)
 {
-  a := A_Index
-  if (c1=a%a%_1 && c2=a%a%_2 && c3=a%a%_3 && EDIT_RAIDNAME=a%a%_n)
-  {
-    s=1
-    break
-  }
+  Global
+  Loop,%a_len%
+    if (a%A_Index%_n=v)
+      return a%A_Index%_s
+  Return ""
 }
-if (!s)
+
+isGameWinActive()
 {
-    a_len++
-    a%a_len%_1:=c1
-    a%a_len%_2:=c2
-    a%a_len%_3:=c3
-    a%a_len%_n:=EDIT_RAIDNAME
+  return WinActive("Dawn of the Dragons")
+}
+
+ShowMsg(ByRef string,disptype=0)
+{
+  global msg_display_type
+  if (!disptype)
+    disptype:=msg_display_type
+  if (disptype="both" or disptype="tool")
+  {
+    ToolTip,%string%,0,0,20
+    SetTimer,removetooltip,-2500
+  }
+  if (disptype="both" or disptype="tray")
+  {
+    TrayTip,In-Raid DotD Notice,%string%
+  }
   
 }
-;update all entries marked with EDIT_RAIDNAME with contents of EDIT_RAIDDATA
-;Ensure that a blank entry in raiddata does not foul up the database.
-;because it will for some reason.
-If (EDIT_RAIDDATA="")
-  s:=" "
-else
-  s:=EDIT_RAIDDATA
+
+print(str)
+{
+  OutputDebug,%str%
+}
+;===============================================================================
+SystemCleanup:
+if (!debug_mode)
+  ExitApp
+;in debug mode, allow writeback to database
+IfExist,raiddb.dat
+  FileDelete,raiddb.dat
 Loop,%a_len%
-  if (a%A_Index%_n=EDIT_RAIDNAME)
-    a%A_Index%_s := s
-
-goto GuiClose
-
-EDIT_CANCEL:
-goto GuiClose
-
-
-
+{
+  s := a%A_Index%_1 "," a%A_Index%_2 "," a%A_Index%_3 ","
+  s .= """" a%A_Index%_n ""","
+  s .= """" a%A_Index%_s ""","
+  s .= a%A_Index%_c "`n"
+  FileAppend,%s%,raiddb.dat
+}
+ExitApp
 
 

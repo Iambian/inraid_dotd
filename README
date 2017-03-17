@@ -7,7 +7,7 @@ ___________________________
 3. ADDING RAIDS TO THE DATABASE AND MAINTAINING IT
 4. SYMBOLS USED IN THE TIER LIST
 5. VERSION HISTORY
-6. NOTES AND TROUBLESHOOTING
+6. TROUBLESHOOTING
 7. LICENSE
 8. SPECIAL THANKS
 
@@ -131,38 +131,34 @@ _________________________
        Updated db coverage.
 0.19 - Fixed overlapping tooltips issue.
        Updated db coverage and added tiers to placeholders
+0.20 - Docs updated to make troubleshooting easier to skim and get help from.
+       Program source rearranged for ease of maintenance.
+       Tentative non-raid (campaign) support added.
 
 _________________________________________________
---:: NOTES AND TROUBLESHOOTING ::--
+--:: TROUBLESHOOTING ::--
 
-This is a Windows-only tool. Sorry *nix, Mac people. Was never able to figure
-out how to get IronAHK to work for cross-platform compatibility.
+Q1: How do I get this script to run in Linux/OSX/(insert any non-Windows OS)
+A1: You don't. Sorry >.<
+    If you can get IronAHK to work, tell me about it and 
+    maybe we can work something out.
 
-Also, the script expects all color depths to be at least 24 bit. Detection
-runs the risk of failing otherwise.
+Q2: I turned on the monitor but the script isn't (reliably) detecting my raid.
+A2: Could be any of the following:
+    1. The raid isn't in the database yet.
+       Wait for an update or add the data to the database yourself.
+    2. You have the game zoomed in.
+       Click "Show All" or undo any browser zooming.
+    3. The raid graphics is animated.
+       Turn off animations.
+    4. Desktop and application color depth is less than 24-bit.
+       Change to 24-bit (true color) or higher.
+       Or get a better video card/computer /then/ try it.
 
-DO NOT ZOOM IN. The script expects everything to be at 100% zoom.
-If you want it to work with zoom, you'll need to resample home.bmp to the
-exact zoom you play the game at, resample the entire raid database, and
-hope to whatever deity you pray to that the color interpolation algorithm
-used to smooth out pixels in your zoomed state doesn't change behind
-your back. Too much work.
-
-DISABLE ANIMATIONS. Some raids are animated. We don't put any animated frames
-into the database and I'm not really sure that's possible. At least, not
-without some serious frame-by-frame dedication. Too much work.
-
-Campaigns aren't supported yet. For now, you'll end up with some false
-positives for campaign bosses such as Horthania and Imryx.
-
-Sometimes the tier information covers up stuff on the raid window that you
-need to see or click, such as campaign modifiers or the quick legion/item set
-change panel. You should be able to click the tooltip to dismiss it for half
-a second. I know it isn't that long but it's better than constantly stopping
-and restarting the monitor. I'll probably make it so that it'll go away
-temporarily if any tooltip is being hovered over. Something to do, I suppose?
-
-
+Q3: How do I hide tier information? They're kinda getting in the way.
+A3: Push F1 to toggle off the monitor, do your thing, then toggle it back on.
+    You can also click on the tooltip to make it go away briefly.
+    
 _________________
 --:: LICENSE ::--
 
