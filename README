@@ -138,6 +138,7 @@ _________________________
        Updated db coverage for raids and some campaign nodes.
 0.22 - Reduced size of home.bmp for hopefully improved performance
        Updated db to fix error
+0.22a- Undid half the db fix
 
 _________________________________________________
 --:: TROUBLESHOOTING ::--
