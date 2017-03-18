@@ -134,6 +134,8 @@ _________________________
 0.20 - Docs updated to make troubleshooting easier to skim and get help from.
        Program source rearranged for ease of maintenance.
        Tentative non-raid (campaign) support added.
+0.21 - Source updated to hopefully prevent db writeback if read incomplete.
+       Updated db coverage for raids and some campaign nodes.
 
 _________________________________________________
 --:: TROUBLESHOOTING ::--

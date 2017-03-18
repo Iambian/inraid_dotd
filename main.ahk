@@ -42,6 +42,7 @@ SetControlDelay, -1
 ;For sources, use insurgi's or mutik's tables.
 ;For really old raids, use Leon's
 ;---------------------
+initialized = 0
 c1 = 0
 c2 = 0
 c3 = 0
@@ -89,6 +90,7 @@ if FileExist("raiddb.dat") {
 }
 ;---------------------
 OnExit,SystemCleanup
+initialized = 1
 Return
 ;###############################################################################
 
@@ -411,9 +413,8 @@ print(str)
 }
 ;===============================================================================
 SystemCleanup:
-if (!debug_mode)
+if (!debug_mode || !initialized)
   ExitApp
-;in debug mode, allow writeback to database
 IfExist,raiddb.dat
   FileDelete,raiddb.dat
 Loop,%a_len%
