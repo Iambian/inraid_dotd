@@ -136,6 +136,8 @@ _________________________
        Tentative non-raid (campaign) support added.
 0.21 - Source updated to hopefully prevent db writeback if read incomplete.
        Updated db coverage for raids and some campaign nodes.
+0.22 - Reduced size of home.bmp for hopefully improved performance
+       Updated db to fix error
 
 _________________________________________________
 --:: TROUBLESHOOTING ::--
