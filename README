@@ -3,12 +3,12 @@ DotD In-Raid Tier Display Tool
 ___________________________
 --:: TABLE OF CONTENTS ::--
 1. ABOUT 
-2. USAGE 
-3. ADDING RAIDS TO THE DATABASE AND MAINTAINING IT
-4. SYMBOLS USED IN THE TIER LIST
-5. VERSION HISTORY
-6. TROUBLESHOOTING
-7. LICENSE
+2. INSTALLATION AND USAGE
+3. SYMBOLS USED IN THE TIER LIST
+4. ADDING RAIDS AND DATABASE MAINTENANCE
+5. TROUBLESHOOTING
+6. LICENSE
+7. VERSION HISTORY
 8. SPECIAL THANKS
 
 _______________
@@ -22,8 +22,8 @@ I wrote this because ShortStabber asked and I was also really tired of looking
 up tier data, especially for raids that tend to move fairly quickly or such
 raids get posted to the chat while I'm not looking there.
 
-_______________
---:: USAGE ::--
+________________________________
+--:: INSTALLATION AND USAGE ::--
 
 You'll need AutoHotkey 1.1.* (also known as AutoHotkey_L) installed on your
 machine in order to run my script. You can get it from this page:
@@ -50,8 +50,21 @@ Now, open up Dawn of the Dragons (if you aren't already playing) and
 enter any raid. If the script recognizes the raid graphics, it should
 display tier information about it in tooltips just below the magics.
 
-_________________________________________________________
---:: ADDING RAIDS TO THE DATABASE AND MAINTAINING IT ::--
+_______________________________________
+--:: SYMBOLS USED IN THE TIER LIST ::--
+
+  ^  Indicates AP. The minimum damage needed to obtain achievement credit.
+  *  Indicates OS. This is the best (or optimal) loot per damage.
+     Some raids have more than one.
+  k  thousand (kilo). Example: 140k = 140,000. Rarely-used.
+  m  million. Example: 3.4m = 3,400,000.
+  b  billion. Example: 1.5b = 1,500,000,000.
+  t  trillion. Example: 5t = 5,000,000,000,000. Not often used at the moment.
+  q  quadrillion. No. You don't get an example. This actually isn't used
+     in any tier listings, and I hope it never does.
+
+_______________________________________________
+--:: ADDING RAIDS AND DATABASE MAINTENANCE ::--
 
 0. There is no database merge tool. If you replace raiddb.dat with any updated
    versions of my script, you will lose all progress. Also, don't quickly cycle
@@ -85,18 +98,39 @@ _________________________________________________________
 7. You can optionally sort the database by raid name by running dbsort.py
    You'll need Python 2.7.* installed before you can run that script.
    Apologies for the additional requirements.
-_______________________________________
---:: SYMBOLS USED IN THE TIER LIST ::--
 
-  ^  Indicates AP. The minimum damage needed to obtain achievement credit.
-  *  Indicates OS. This is the best (or optimal) loot per damage.
-     Some raids have more than one.
-  k  thousand (kilo). Example: 140k = 140,000. Rarely-used.
-  m  million. Example: 3.4m = 3,400,000.
-  b  billion. Example: 1.5b = 1,500,000,000.
-  t  trillion. Example: 5t = 5,000,000,000,000. Not often used at the moment.
-  q  quadrillion. No. You don't get an example. This actually isn't used
-     in any tier listings, and I hope it never does.
+_________________________________________________
+--:: TROUBLESHOOTING ::--
+
+Q1: How do I get this script to run in Linux/OSX/(insert any non-Windows OS)
+A1: You don't. Sorry >.<
+    If you can get IronAHK to work, tell me about it and 
+    maybe we can work something out.
+
+Q2: I turned on the monitor but the script isn't (reliably) detecting my raid.
+A2: Could be any of the following:
+    1. The raid isn't in the database yet.
+       Wait for an update or add the data to the database yourself.
+    2. You have the game zoomed in.
+       Click "Show All" or undo any browser zooming.
+    3. The raid graphics is animated.
+       Turn off animations.
+    4. Desktop and application color depth is less than 24-bit.
+       Change to 24-bit (true color) or higher.
+       Or get a better video card/computer /then/ try it.
+
+Q3: How do I hide tier information? They're kinda getting in the way.
+A3: Push F1 to toggle off the monitor, do your thing, then toggle it back on.
+    You can also click on the tooltip to make it go away briefly.
+    
+_________________
+--:: LICENSE ::--
+
+See the plaintext file named LICENSE for more information.
+
+A friend of mine convinced me that having a license is important if I
+want people to actually use my work. So I picked the MIT license since
+it lets people do just that.
 
 _________________________
 --:: VERSION HISTORY ::--
@@ -139,40 +173,10 @@ _________________________
 0.22 - Reduced size of home.bmp for hopefully improved performance
        Updated db to fix error
 0.22a- Undid half the db fix
-
-_________________________________________________
---:: TROUBLESHOOTING ::--
-
-Q1: How do I get this script to run in Linux/OSX/(insert any non-Windows OS)
-A1: You don't. Sorry >.<
-    If you can get IronAHK to work, tell me about it and 
-    maybe we can work something out.
-
-Q2: I turned on the monitor but the script isn't (reliably) detecting my raid.
-A2: Could be any of the following:
-    1. The raid isn't in the database yet.
-       Wait for an update or add the data to the database yourself.
-    2. You have the game zoomed in.
-       Click "Show All" or undo any browser zooming.
-    3. The raid graphics is animated.
-       Turn off animations.
-    4. Desktop and application color depth is less than 24-bit.
-       Change to 24-bit (true color) or higher.
-       Or get a better video card/computer /then/ try it.
-
-Q3: How do I hide tier information? They're kinda getting in the way.
-A3: Push F1 to toggle off the monitor, do your thing, then toggle it back on.
-    You can also click on the tooltip to make it go away briefly.
-    
-_________________
---:: LICENSE ::--
-
-See the plaintext file named LICENSE for more information.
-
-A friend of mine convinced me that having a license is important if I
-want people to actually use my work. So I picked the MIT license since
-it lets people do just that.
-
+0.23 - Docs updated to fix typo, headers modified, sections rearranged
+       Update db coverage including GD campaign
+       
+       
 ________________________
 --:: SPECIAL THANKS ::--
 
@@ -180,7 +184,7 @@ Dusan, Idrinth, and Warric for their inline tier script, from where most
 of the raid tier data was transcribed.
 
 ShortStabber. Their interest in the and the desire (both SS' and mine)
-for soemthing easier than actually having to look up tiers and potentially
+for something easier than actually having to look up tiers and potentially
 missing fast-moving raids. 
 
 blub. For beta testing and being such an awesome guild leader.
