@@ -175,7 +175,8 @@ _________________________
 0.22a- Undid half the db fix
 0.23 - Docs updated to fix typo, headers modified, sections rearranged
        Update db coverage including GD campaign
-       
+0.24 - Source updated to fix raid/camp ident problem
+       Updated db coverage       
        
 ________________________
 --:: SPECIAL THANKS ::--

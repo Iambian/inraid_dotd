@@ -340,8 +340,10 @@ FindMatch()
   {
     ;print("chk[" a_index "] (" a%a_index%_1 "," a%a_index%_2 "," a%a_index%_3 ")")
     if (rgb1=a%a_index%_1 && rgb2=a%a_index%_2 && rgb3=a%a_index%_3)
-      if ((ltpix=0x795C2F && (!a%a_index%_c)) || a%a_index%_c)
+      ;if ((ltpix=0x795C2F && (!a%a_index%_c)) || ((!ltpix=0x795C2F) && a%a_index%_c))
+      if ((ltpix=0x795C2F) ^ (a%a_index%_c=1))
       {
+        print(ltpix ":" (ltpix=0x795C2F && (!a%a_index%_c)) ":" a%a_index%_c ":" a%a_index%_n )
         m_len++
         m%m_len%_n := a%a_index%_n
         m%m_len%_s := a%a_index%_s
