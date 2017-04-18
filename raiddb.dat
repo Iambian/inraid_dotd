@@ -14,6 +14,7 @@
 0x0929CD,0x7AB5FD,0x0E205E,"Apoc Demon","12m, ^20m, 28m, 36m, *40m, 60m, 80m, 100m, 120m, 140m, 160m, 180m",0
 0x154CD4,0x19B1FB,0x06337B,"Apoc Demon","12m, ^20m, 28m, 36m, *40m, 60m, 80m, 100m, 120m, 140m, 160m, 180m",0
 0x0E15A9,0x0C0F0E,0x030C0D,"Arachna","^440k, 616k ... 7.48m",0
+0x0E16A7,0x0C0F0E,0x030C0D,"Arachna","^440k, 616k ... 7.48m",0
 0x0A1C3C,0x404E57,0x5F7B9B,"Ascendant's Echo","^*3b, 5b, 7.5b, 10b, 15b, 18b",0
 0xC3C6AD,0x8FA192,0x263438,"Ataxes","^200k, 480k, 1m, 1.4m",0
 0x2D2D24,0x2E3D3D,0x091115,"Ataxes","^200k, 480k, 1m, 1.4m",0
@@ -36,11 +37,13 @@
 0x42443C,0x4E565E,0x678496,"Batiatus' Gladiators","^1.2m, 1.26m, 1.44m, 2.16m, 2.88m, 3.84m, 6m, 8.4m",0
 0xFEDE00,0x304B33,0x4C5044,"Behemoth","^800m, 900m, *1b, 1.25b, 1.5b, 1.75b, 2b, 2.25b, 2.5b, 2.75b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b, 20b, 25b, 30b, 35b, 40b",0
 0x505A39,0x223927,0x012723,"Behemoth","^800m, 900m, *1b, 1.25b, 1.5b, 1.75b, 2b, 2.25b, 2.5b, 2.75b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b, 20b, 25b, 30b, 35b, 40b",0
+0xFFD043,0x00082F,0x000C37,"Behemoth","^800m, 900m, *1b, 1.25b, 1.5b, 1.75b, 2b, 2.25b, 2.5b, 2.75b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b, 20b, 25b, 30b, 35b, 40b",0
 0x1C1B1B,0x333739,0x191714,"Bellarius","^1.8m, 2.34m, 4.5m, 9m, 32.4m",0
 0xC9B6A2,0x12180F,0x272133,"Black Hand Lieutenant","^50b, *55b, 75b, *100b, 150b, 225b, 300b, 400b, 500b, 800b, 900b",0
 0x6495D2,0x77C3FF,0x2C3432,"Black Hand Pillagers","5b, ^6b, 10b, *15b, 20b, 25b, 50b, 100b, 200b, 300b",0
 0x54321B,0x363333,0x0F0D0A,"Black Moon Pack","^2.7m, 3.78m, 5.13m, 11.1m, 16.9m, 36.5m, 45.9m",0
 0x57321B,0x472F13,0x0F0D0A,"Black Moon Pack","^2.7m, 3.78m, 5.13m, 11.1m, 16.9m, 36.5m, 45.9m",0
+0x54321B,0x4B3215,0x0F0D0A,"Black Moon Pack","^2.7m, 3.78m, 5.13m, 11.1m, 16.9m, 36.5m, 45.9m",0
 0xBEAE81,0x352C3E,0xA58056,"Blood Dancer","^*1b, 1.5b, 2b, 2.5b, 3b, 3.5b, 4b, 5b, 8b",0
 0x30331A,0x222113,0x544A36,"Blood Dancer","^*1b, 1.5b, 2b, 2.5b, 3b, 3.5b, 4b, 5b, 8b",0
 0x3B5029,0xA88E8D,0x5F4C38,"Blood Dancer","^*1b, 1.5b, 2b, 2.5b, 3b, 3.5b, 4b, 5b, 8b",0
@@ -87,6 +90,7 @@
 0x615257,0x063ED4,0x3E5255,"Deadly Clockwork Giant","^500b, 750b, 1t, 1.5t, 2t, 2.5t, 3t, 4t, *5t, 7.5t, 10t, 15t, 20t, 30t, 40t, 50t",0
 0x131935,0xFDD371,0x2B3C56,"Deadly Clockwork Giant","^500b, 750b, 1t, 1.5t, 2t, 2.5t, 3t, 4t, *5t, 7.5t, 10t, 15t, 20t, 30t, 40t, 50t",0
 0xF6BC7E,0xE9B171,0x597786,"Deadly Clockwork Giant","^500b, 750b, 1t, 1.5t, 2t, 2.5t, 3t, 4t, *5t, 7.5t, 10t, 15t, 20t, 30t, 40t, 50t",0
+0xBFC5C9,0xADB6B7,0x090A15,"Deadly Horgrak","^4t, *5t, 7.5t, 10t, 15t, 20t, 30t, 40t, 50t, 100t, 200t, 400t, 800t",0
 0x828486,0x21242A,0x41667A,"Deathglare","^900k, 3.69m, 12.2m, 15.3m",0
 0x877259,0x89785E,0x0E161B,"Dirthax","^5.5m, 24.2m, 71.5m, 99m",0
 0x8A7458,0x89785E,0x0E161B,"Dirthax","^5.5m, 24.2m, 71.5m, 99m",0
@@ -107,6 +111,7 @@
 0x817D72,0xA3B1A3,0x3F8160,"Dreadbloom","^9m, 32.6m, 73.8m",0
 0x5E5F89,0xA9B8A2,0x295431,"Dreadbloom","^9m, 32.6m, 73.8m",0
 0x817E71,0xA3B1A3,0x3F8160,"Dreadbloom","^9m, 32.6m, 73.8m",0
+0xAABFA8,0xC0C9BC,0x578D71,"Dreadbloom","^9m, 32.6m, 73.8m",0
 0x574B58,0x4B3E43,0x1E2A23,"Drulcharus","^125m, *300m, 400m, 750m, 1b, 1.5b, 2.5b, 5b, 8b",0
 0x3869AD,0xCA934E,0x324452,"Drulcharus","^125m, *300m, 400m, 750m, 1b, 1.5b, 2.5b, 5b, 8b",0
 0xE6B26C,0xCB944F,0x5F7D92,"Drulcharus","^125m, *300m, 400m, 750m, 1b, 1.5b, 2.5b, 5b, 8b",0
@@ -149,6 +154,7 @@
 0x255FFC,0x0F101B,0x24242D,"Elite Murderer","15b, 20b, 25b, 30b, 37.5b, 45b, 50b, 55b, 60b, 65b, 70b, *75b, 80b, 90b, 100b",0
 0x082160,0x002A46,0x909CA0,"Elite Rannveig","35b, *50b, 100b, *120b, 150b, 225b, 300b, 400b, 500b, 600b, 700b, 800b, 1t",0
 0xB6BFD1,0x3C4679,0x264458,"Elite Rannveig","35b, *50b, 100b, *120b, 150b, 225b, 300b, 400b, 500b, 600b, 700b, 800b, 1t",0
+0xD0FBCF,0xADA48D,0xDBDCBF,"Elite Rannveig","35b, *50b, 100b, *120b, 150b, 225b, 300b, 400b, 500b, 600b, 700b, 800b, 1t",0
 0x113233,0x276250,0x242421,"Elite Reaper","30b, 35b, 40b, 45b, 50b, 55b, 60b, 65b, 70b, 75b, 80b, 90b, 100b, *120b, 150b, 180b",0
 0x1C3767,0x225548,0x244A41,"Elite Reaper","30b, 35b, 40b, 45b, 50b, 55b, 60b, 65b, 70b, 75b, 80b, 90b, 100b, *120b, 150b, 180b",0
 0x2B6B55,0x456A51,0x416469,"Elite Reaper","30b, 35b, 40b, 45b, 50b, 55b, 60b, 65b, 70b, 75b, 80b, 90b, 100b, *120b, 150b, 180b",0
@@ -167,6 +173,7 @@
 0xE29C64,0xF7E66F,0x9D5B39,"Elite Whispers","10b, 15b, 20b, 25b, 30b, 35b, 40b, 45b, 50b, 55b, 60b, *70b, 80b, 90b, 100b, 125b",0
 0xB2AE92,0x798970,0x222721,"Elite Wilds","[Unknown]",0
 0x88B3D1,0x151425,0x2D3329,"Elite Wilds","[Unknown]",0
+0x6B564E,0x798970,0x1D1713,"Elite Wilds","[Unknown]",0
 0x3D3C5D,0x333146,0x1B1A2B,"Elite Yule Present Bearer","50b, 60b, 70b, 80b, 90b, 100b, *120b, 150b, 200b, 225b",0
 0xA29485,0x15162F,0x383841,"Elite Yule Present Bearer","50b, 60b, 70b, 80b, 90b, 100b, *120b, 150b, 200b, 225b",0
 0x655650,0x272B3B,0x323232,"Engines of War","^750m, 2b, 2.4b, *3b, 4b, 5b, 6b, 7b, 8b, 9b, 10b, 12.5b, 15b, 17.5b, 20b, 25b, 30b, 40b, 50b, 60b, 70b,80b, 90b, 100b, 150b",0
@@ -242,8 +249,11 @@
 0xDACEC4,0x69645D,0x3F362F,"Hurkus","90m, ^113m, 135m, *150m, 180m, 225m, 300m, 550m, 900m",0
 0xCEB7A4,0x282B39,0x3E4236,"Hurkus","90m, ^113m, 135m, *150m, 180m, 225m, 300m, 550m, 900m",0
 0x9F9395,0xB7A390,0x202D44,"Hurkus","90m, ^113m, 135m, *150m, 180m, 225m, 300m, 550m, 900m",0
+0xCCB5A2,0x242735,0x3F4236,"Hurkus","90m, ^113m, 135m, *150m, 180m, 225m, 300m, 550m, 900m",0
+0xDACEC4,0x6B665E,0x403730,"Hurkus","90m, ^113m, 135m, *150m, 180m, 225m, 300m, 550m, 900m",0
 0x365B5A,0x644B4A,0x092246,"Hybrid","^1.84b, 2b, 2.5b, *3b, 4b, 5b, 6b, 7b, 8b, 9b, 10b, 12.5b, 15b, 17.5b, 20b, 25b, 30b, 40b, 50b, 60b, 70b, 80b, 90b, 100b",0
 0x5D3139,0x614756,0x001626,"Hybrid","^1.84b, 2b, 2.5b, *3b, 4b, 5b, 6b, 7b, 8b, 9b, 10b, 12.5b, 15b, 17.5b, 20b, 25b, 30b, 40b, 50b, 60b, 70b, 80b, 90b, 100b",0
+0xF3D057,0x453145,0x5D5759,"Hybrid","^1.84b, 2b, 2.5b, *3b, 4b, 5b, 6b, 7b, 8b, 9b, 10b, 12.5b, 15b, 17.5b, 20b, 25b, 30b, 40b, 50b, 60b, 70b, 80b, 90b, 100b",0
 0x141412,0x1E201F,0x1D2222,"Hydra","^650k, 2.86m, 8.45m, 11.7m",0
 0x141412,0x344039,0x1D2222,"Hydra","^650k, 2.86m, 8.45m, 11.7m",0
 0x7F865B,0x344039,0x1D2222,"Hydra","^650k, 2.86m, 8.45m, 11.7m",0
@@ -266,6 +276,7 @@
 0x1C130C,0x251C1D,0x352C26,"Kalaxia","^1.6m,2.08m 8m, 28.8m",0
 0x745B26,0x39271E,0x6B3C24,"Kanehuar","^400m, *500m, 750m, 1b, 1.5b, 2b, 2.5b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b",0
 0x975139,0x39271E,0x523120,"Kanehuar","^400m, *500m, 750m, 1b, 1.5b, 2b, 2.5b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b",0
+0x658681,0xA6BB92,0xA3A249,"Kanehuar","^400m, *500m, 750m, 1b, 1.5b, 2b, 2.5b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b",0
 0x323A66,0x846A44,0x403327,"Kang-Gsod","^950m, 4.18m, 12.4m, 17.1m",0
 0x62787A,0x363E43,0x0A1C0D,"Karkata","300m, ^380m, *400m, 500m, 600m, 700m, 800m, 900m, 1b, 1.25b, 1.5b, 1.75b, 2b, 2.25b, 2.5b, 2.75b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b",0
 0x03000B,0x212F38,0x83A1A5,"Karkata","300m, ^380m, *400m, 500m, 600m, 700m, 800m, 900m, 1b, 1.25b, 1.5b, 1.75b, 2b, 2.25b, 2.5b, 2.75b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b",0
@@ -353,8 +364,10 @@
 0x5D524B,0x282727,0xAB9A95,"Phaedra","^5.6m, 7m, 50.7m, 115m",0
 0xA29485,0x15162F,0x383841,"Present Bearer","500m, ^600m, *750m, 1b, 1.5b, 2b, 2.5b, 3b, 3.5b, 4b, 4.5b, 5b, 10b",0
 0x3D3C5D,0x333146,0x1B1A2B,"Present Bearer","500m, ^600m, *750m, 1b, 1.5b, 2b, 2.5b, 3b, 3.5b, 4b, 4.5b, 5b, 10b",0
+0x171B3D,0x3F4143,0xA3968A,"Present Bearer","500m, ^600m, *750m, 1b, 1.5b, 2b, 2.5b, 3b, 3.5b, 4b, 4.5b, 5b, 10b",0
 0x25262B,0x333145,0x5D6060,"Punishment","1b, ^1.2b, 1.5b, *2b, 2.5b, *3b, 3.5b, 4b, 5b, 10b",0
 0x83552D,0x15162F,0x363841,"Punishment","1b, ^1.2b, 1.5b, *2b, 2.5b, *3b, 3.5b, 4b, 5b, 10b",0
+0x575A52,0x94A573,0x418A9D,"Qwil Cow","3b, 10b, 15b, 20b, 25b, 30b, 90b, 130b, 200b, 500b, 1t",0
 0x343431,0x343B3C,0x5C594B,"Ragetalon","^1.1m, 4.84m, 14.3m, 19.8m",0
 0x2F2F2F,0x454B47,0x41555E,"Ragunt","^225m, *310m, 400m, 510m, 750m, 1b, 1.5b, 2.5b, 5b",0
 0x585D5C,0xE3D08C,0x151524,"Ragunt","^225m, *310m, 400m, 510m, 750m, 1b, 1.5b, 2.5b, 5b",0
@@ -393,6 +406,7 @@
 0x39393A,0x777169,0x684C30,"Scuttlegore","^2.2m, 9.68m, 28.6m, 39.6m",0
 0x39393A,0x777169,0x48321D,"Scuttlegore","^2.2m, 9.68m, 28.6m, 39.6m",0
 0x39393A,0x777169,0x73512F,"Scuttlegore","^2.2m, 9.68m, 28.6m, 39.6m",0
+0x39393A,0x777169,0x72502E,"Scuttlegore","^2.2m, 9.68m, 28.6m, 39.6m",0
 0xD1DADF,0xAEBBC2,0x27292B,"Scylla","^500k, 2.05m, 6.75m, 8.5m",0
 0x9FA6C4,0x2F3543,0x2B3337,"Serpina","^6.25m, 9.4m, 11.3m, 13.2m, 15m, 16.9m, 18.8m, 20.7m, 22.5m, 24.4m",0
 0x222B2F,0x2F3543,0x2D3337,"Serpina","^6.25m, 9.4m, 11.3m, 13.2m, 15m, 16.9m, 18.8m, 20.7m, 22.5m, 24.4m",0
@@ -405,6 +419,7 @@
 0x0B31A5,0x262975,0x1C1219,"Shadow","300m, ^*350m, 500m, 750m, 1b",0
 0x261D1E,0x632C27,0x291921,"Shadow","300m, ^*350m, 500m, 750m, 1b",0
 0x141111,0x201915,0x182122,"Shadow","300m, ^*350m, 500m, 750m, 1b",0
+0x0B31A5,0x262975,0x1E131B,"Shadow","300m, ^*350m, 500m, 750m, 1b",0
 0x525162,0x201D0C,0x23496A,"Siculus","^4.25m, *400m, 500m, 600m, 700m, 800m, 900m, 1b, 2b",0
 0x744118,0x1E2121,0x101313,"Sight of Solus","1b, ^2.5b, *3b, 5b, 6b, 7b, 8b, 10b",0
 0x16184A,0x8A93F2,0x0C0F15,"Sir Cai","^1.4m, 1.75m, 12.7m, 28.7m",0
@@ -450,6 +465,7 @@
 0x091760,0x73758F,0x0F0B25,"Thratu's Abomination","300m, ^360m, *400m, 500m, 600m, 700m, 800m, 900m, 1b, 1.25b, 1.5b, 1.75b, 2b, 2.25b, 2.5b, 2.75b, 3b, 4b, 5b, 6b, 8b, 10b, 12.5b, 15b, 20b",0
 0xE9E9E9,0x202A28,0x242C2A,"Tisiphone","^75m, 105m, *150m, 225m, 300m, 375m, 450m, 525m, 600m, 675m",0
 0x7C7F7E,0x202A28,0x242C2A,"Tisiphone","^75m, 105m, *150m, 225m, 300m, 375m, 450m, 525m, 600m, 675m",0
+0x1B2020,0x202A28,0x212927,"Tisiphone","^75m, 105m, *150m, 225m, 300m, 375m, 450m, 525m, 600m, 675m",0
 0x28231B,0x202017,0x352C1A,"Tithrasia","^1.8m, 4.32m, 9m, 12.6m",0
 0x3D493B,0x666B5C,0x131510,"Trekex","^625m, 750m, 1b, 1.25b, 1.5b, 1.75b, 2b, 2.5b, 3b, 3.5b, *4b, 4.5b, 5b, 6b, 7b, 8b, 9b, 10b, 12.5b, 15b, 17.5b, 20b",0
 0x989F79,0x615124,0x0C0C0D,"Trekex","^625m, 750m, 1b, 1.25b, 1.5b, 1.75b, 2b, 2.5b, 3b, 3.5b, *4b, 4.5b, 5b, 6b, 7b, 8b, 9b, 10b, 12.5b, 15b, 17.5b, 20b",0
@@ -498,6 +514,7 @@
 0xEBDBB4,0xD5BC89,0xE1C9AA,"Yydian","^100m, 125m, 175m, *250m, 300m, 375m, 450m, 525m, 625m, 900m, 1.5b",0
 0xEBDAB6,0xD4BA8D,0xB49982,"Yydian","^100m, 125m, 175m, *250m, 300m, 375m, 450m, 525m, 625m, 900m, 1.5b",0
 0xAA7D5A,0xD4BA8D,0x91735F,"Yydian","^100m, 125m, 175m, *250m, 300m, 375m, 450m, 525m, 625m, 900m, 1.5b",0
+0xA87D5A,0xD4BA8D,0x91735F,"Yydian","^100m, 125m, 175m, *250m, 300m, 375m, 450m, 525m, 625m, 900m, 1.5b",0
 0x152229,0x343123,0x182122,"Z'ralk'thalat","100m, ^175m, *200m, 300m, 400m, 500m, 600m, 700m, 800m, 900m, 1b",0
 0x104C80,0x223F6B,0x0A6AE3,"Z'ralk'thalat","100m, ^175m, *200m, 300m, 400m, 500m, 600m, 700m, 800m, 900m, 1b",0
 0x11110E,0x373426,0x1B292D,"Z'ralk'thalat","100m, ^175m, *200m, 300m, 400m, 500m, 600m, 700m, 800m, 900m, 1b",0
@@ -515,7 +532,8 @@
 0x0E0907,0xB3AEA3,0x1D2529,"[H] Ancient Sentry","1b, 2.5b, 5b, 7.5b, 10b, 15b, 20b, 25b, 50b, 100b, 200b, 300b, 400b",1
 0xB6BEBC,0x0C0A10,0x221D1B,"[H] BH Enforcer","1b, 2.5b, 5b, 7.5b, 10b, 15b, 20b, 25b, 50b, 100b, 200b, 300b",1
 0x653E2D,0x3B2C21,0x2F2925,"[H] BH Howlers","1b, 2.5b, 5b, 7.5b, 10b, 15b, 20b, 25b, 50b, 100b",1
-0x2D1F46,0x432345,0x564F5C,"[H] Bastion of Blood","^500b, 750b, 1t, 1.5t, 2t, 2.5t, 3t, 4t, *5t, 7.5t, 10t, 15t, 20t, 30t, 40t, 50t",1
+0x7399AC,0x2D6C59,0x0B1F1C,"[H] Basileus Lizard","960m, 1.5b, 2.5b, 3.75b, 4.75b, 5.5b, 6.4b, 10b, 15b",1
+0x2D1F46,0x432345,0x564F5C,"[H] Bastion of Blood","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x56424C,0x5D4555,0x705052,"[H] Black Moon Pack","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0xAAFDF2,0x100E23,0x2D3533,"[H] Carshk","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 8.5b",1
 0xE1D0B6,0x2B2624,0xDAA361,"[H] Cenius, the Eighth Terror","4b, 6.5b, 10b, 25b, 50b, 75b, 100b, 150b, 200b, 250b, 300b, 400b",1
@@ -532,11 +550,14 @@
 0x383D6D,0x1C0E41,0x0B0B38,"[H] GM Horror","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x41697C,0x4E6F61,0x25353D,"[H] General Nund","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
 0x4A8FCA,0x625F57,0x1A39A4,"[H] Giant Cook","960m, 1.5b, 2.5b, 3.75b, 4.75b, 5.5b, 6.4b, 10b, 15b, 25b, 30b, 35b, 40b",1
+0xF8EFE8,0xBA8F6B,0x9B8C6D,"[H] Giant Hunter","960m, 1.5b, 2.5b, 3.75b, 4.75b, 5.5b, 6.4b, 10b, 15b, 25b",1
 0x251F21,0x2E2529,0x644B46,"[H] Gorgon","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
+0xF7E9DA,0xE4B07B,0x2C244A,"[H] Hitullpa Aatqui","960m, 1.5b, 2.5b, 3.75b, 4.75b, 5.5b, 6.4b, 10b, 15b, 25b, 30b, 35b, 40b, 50b",1
 0x737471,0xA0AAA3,0x313030,"[H] Horthania","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
 0x4E524E,0x242424,0x191916,"[H] Horthania","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
 0x616763,0x7D7D7D,0x252C2D,"[H] Horthania","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
 0x3A3132,0x181C38,0x000FFB,"[H] Imryx","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
+0x192586,0x151730,0x0426D4,"[H] Imryx","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x2D4F8C,0x223A65,0x231B1D,"[H] Imryx's Whelps","200m, 250m, 320m, 375m, 480m, 550m, 640m, 960m, 1.5b, 2.4b, 2.75b, 5b, 7b",1
 0x262C36,0x223A65,0x2537A4,"[H] Imryx's Whelps","200m, 250m, 320m, 375m, 480m, 550m, 640m, 960m, 1.5b, 2.4b, 2.75b, 5b, 7b",1
 0x090F1D,0x234173,0x0643CB,"[H] Imryx's Whelps","200m, 250m, 320m, 375m, 480m, 550m, 640m, 960m, 1.5b, 2.4b, 2.75b, 5b, 7b",1
@@ -556,10 +577,20 @@
 0xD9CAA7,0x131818,0x564D41,"[H] Northern Sea Giant","960m, 1.5b, 2.5b, 4.75b, 5.5b, 6.4b, 10b, 15b, 25b, 30b, 35b, 40b",1
 0x534421,0x3A2A78,0x17164B,"[H] Queen's Chosen"," ",1
 0x4A4A33,0x443824,0x1F252F,"[H] SL Hrakka'thon","25b, 50b, 100b, 500b, 700b",1
+0x1C1C1D,0x2A212C,0x49373B,"[H] Siculus","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0xE0EBE1,0x426149,0x15261B,"[H] Thurmavus","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
+0x857C04,0x001B1D,0x60524F,"[H] Trance Ogre","2b, 4b, 6.5b, 10b, 15b, 20b, 25b, 50b, 75b, 100b, 150b, 200b",1
 0x5B6C72,0x374951,0x41544E,"[H] Zanras","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
 0x1C171D,0x151319,0x51393A,"[H] Zombie Horde","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x1C171D,0x4B4358,0x51393A,"[H] Zombie Horde","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x1C171D,0x4F4B60,0x51393A,"[H] Zombie Horde","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
+0xD9BC94,0x56656C,0x1A3B5A,"[WR] Kazarach","100k, 1m, 15m, 35m, 65m, 175m, 325m, 1b, 1.5b, 4.5b, 12b, 21b, 60b, 178b, 250b, 300b",0
+0xCFAF1D,0x8E976C,0x1A3B5A,"[WR] Kazarach","100k, 1m, 15m, 35m, 65m, 175m, 325m, 1b, 1.5b, 4.5b, 12b, 21b, 60b, 178b, 250b, 300b",0
+0xCFAF1D,0x3B556A,0x162739,"[WR] Kazarach","100k, 1m, 15m, 35m, 65m, 175m, 325m, 1b, 1.5b, 4.5b, 12b, 21b, 60b, 178b, 250b, 300b",0
+0x010208,0x2E446B,0x1A3B5A,"[WR] Kazarach","100k, 1m, 15m, 35m, 65m, 175m, 325m, 1b, 1.5b, 4.5b, 12b, 21b, 60b, 178b, 250b, 300b",0
+0xD6A927,0x232729,0x292921,"[WR] Kazarach","100k, 1m, 15m, 35m, 65m, 175m, 325m, 1b, 1.5b, 4.5b, 12b, 21b, 60b, 178b, 250b, 300b",0
 0x19110F,0x67859A,0x4D3926,"[WR] Lyrpan","100k, 1m, 75m, 1.5b, 6.5b, 15b, 43b, 50b, 75b",0
 0x392D23,0x638BA5,0x91A0B7,"[WR] Lyrpan","100k, 1m, 75m, 1.5b, 6.5b, 15b, 43b, 50b, 75b",0
+0x2C2033,0x2E2116,0x1A1B20,"[WR] Lyrpan","100k, 1m, 75m, 1.5b, 6.5b, 15b, 43b, 50b, 75b",0
+0x6D5E5D,0x30435F,0xCEDCEA,"[WR] Lyrpan","100k, 1m, 75m, 1.5b, 6.5b, 15b, 43b, 50b, 75b",0
+0x0D0A0B,0x4F87C6,0x404A53,"[WR] Lyrpan","100k, 1m, 75m, 1.5b, 6.5b, 15b, 43b, 50b, 75b",0
