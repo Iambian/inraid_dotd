@@ -172,9 +172,9 @@
 0xFBF17D,0x9B7255,0x88364A,"Elite Warrior","20b, 30b, 40b, 50b, 60b, 70b, *80b, 90b, 100b",0
 0x261D10,0x997156,0x88364A,"Elite Warrior","20b, 30b, 40b, 50b, 60b, 70b, *80b, 90b, 100b",0
 0x973630,0xDA7155,0x88364A,"Elite Warrior","20b, 30b, 40b, 50b, 60b, 70b, *80b, 90b, 100b",0
-0x23253E,0x0C1F32,0x191521,"Elite Way Warden","125b, 300b, 500b, 750b, 1t, 2t, 10t [Missing tiers]",0
-0xA06959,0x5B524B,0x093355,"Elite Way Warden","125b, 300b, 500b, 750b, 1t, 2t, 10t [Missing tiers]",0
-0x322346,0x636D8E,0x54634D,"Elite Way Warden","125b, 300b, 500b, 750b, 1t, 2t, 10t [Missing tiers]",0
+0x23253E,0x0C1F32,0x191521,"Elite Way Warden","120b, 150b, 250b, 300b, 400b, 500b, 750b, 1t, 2t, 10t",0
+0xA06959,0x5B524B,0x093355,"Elite Way Warden","120b, 150b, 250b, 300b, 400b, 500b, 750b, 1t, 2t, 10t",0
+0x322346,0x636D8E,0x54634D,"Elite Way Warden","120b, 150b, 250b, 300b, 400b, 500b, 750b, 1t, 2t, 10t",0
 0xE29C64,0xF7E66F,0x9D5B39,"Elite Whispers","10b, 15b, 20b, 25b, 30b, 35b, 40b, 45b, 50b, 55b, 60b, *70b, 80b, 90b, 100b, 125b",0
 0xB2AE92,0x798970,0x222721,"Elite Wilds","50b, 70b, 100b, *120b, 150b, 250b, 300b, 400b, 500b, 600b, 700b, 800b, 1t, 2t, 10t",0
 0x88B3D1,0x151425,0x2D3329,"Elite Wilds","50b, 70b, 100b, *120b, 150b, 250b, 300b, 400b, 500b, 600b, 700b, 800b, 1t, 2t, 10t",0
@@ -551,7 +551,7 @@
 0xE1D0B6,0x2B2624,0xDAA361,"[H] Cenius, the Eighth Terror","4b, 6.5b, 10b, 25b, 50b, 75b, 100b, 150b, 200b, 250b, 300b, 400b",1
 0x636B6A,0x8C8376,0xA06A3C,"[H] Cenius, the Eighth Terror","4b, 6.5b, 10b, 25b, 50b, 75b, 100b, 150b, 200b, 250b, 300b, 400b",1
 0x977D6E,0x2C3433,0x3F3016,"[H] Cenius, the Eighth Terror","4b, 6.5b, 10b, 25b, 50b, 75b, 100b, 150b, 200b, 250b, 300b, 400b",1
-0x8D8402,0x010B31,0x002038,"[H] Centipede Raiders","2b, 4b, 6.5b, 10b, 15b, 20b, 25b, 50b, 75b, 100b, 150b, 200b",1
+0x8D8402,0x010B31,0x002038,"[H] Centipede Raiders","2b, 4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b",1
 0x79596D,0x2E2F60,0x5B4140,"[H] Chimera","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x2B232A,0x110E0F,0x10181D,"[H] Craenaestra","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
 0x946656,0xEA9FA6,0x52393D,"[H] Elvigar","960m, 1.5b, 2.5b, 4.75b, 5.5b, 6.4b, 10b, 15b, 25b, 30b, 35b, 40b, 50b",1
@@ -592,15 +592,17 @@
 0x14D7FC,0x2A3FDE,0x000871,"[H] Magma Tossers","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x16DFF7,0x2A3FDE,0x000871,"[H] Magma Tossers","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0x85BAB4,0x252F2D,0x205B5B,"[H] Monkey Warrior ","960m, 1.5b, 2.5b, 3.75b, 4.75b, 5.5b, 6.4b, 8.75b, 10b, 15b",1
-0x403419,0x4D3D27,0x6B674C,"[H] Nightmare Hives","4b, 6.5b, 10b, 15b, 20b, 25b, 50b, 75b, 100b, 150b, 200b, 300b",1
-0x403419,0x4D3D27,0x523E2A,"[H] Nightmare Hives","4b, 6.5b, 10b, 15b, 20b, 25b, 50b, 75b, 100b, 150b, 200b, 300b",1
-0x534B30,0x40372A,0x283721,"[H] Nightmare Raiders","2b, 4b, 6.5b, 10b, 15b, 20b, 25b, 50b, 75b, 100b, 150b, 200b",1
+0x403419,0x4D3D27,0x6B674C,"[H] Nightmare Hives","4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b, 300b",1
+0x403419,0x4D3D27,0x523E2A,"[H] Nightmare Hives","4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b, 300b",1
+0x534B30,0x40372A,0x283721,"[H] Nightmare Raiders","2b, 4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b",1
 0xD9CAA7,0x131818,0x564D41,"[H] Northern Sea Giant","960m, 1.5b, 2.5b, 4.75b, 5.5b, 6.4b, 10b, 15b, 25b, 30b, 35b, 40b",1
-0x534421,0x3A2A78,0x17164B,"[H] Queen's Chosen"," ",1
+0x636060,0x8D8D85,0x4F4945,"[H] Pillagers","2b, 4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b",1
+0x534421,0x3A2A78,0x17164B,"[H] Queen's Chosen","4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b, 300b, 400b",1
+0x403419,0x4B282D,0x1E1D28,"[H] Queen's Chosen","4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b, 300b, 400b",1
 0x4A4A33,0x443824,0x1F252F,"[H] SL Hrakka'thon","25b, 50b, 100b, 200b, 500b, 700b",1
 0x1C1C1D,0x2A212C,0x49373B,"[H] Siculus","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
 0xE0EBE1,0x426149,0x15261B,"[H] Thurmavus","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
-0x857C04,0x001B1D,0x60524F,"[H] Trance Ogre","2b, 4b, 6.5b, 10b, 15b, 20b, 25b, 50b, 75b, 100b, 150b, 200b",1
+0x857C04,0x001B1D,0x60524F,"[H] Trance Ogre","2b, 4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b",1
 0x474E48,0x2C3D32,0x0F1519,"[H] Trench Golem","2b, 4b, 6.5b, 10b, 15b, 25b, 50b, 75b, 100b, 150b, 200b, 250b",1
 0xE0ECE7,0xC7CFC5,0x747869,"[H] Ursine Riders","960m, 1.5b, 2.5b, 4.75b, 5.5b, 6.4b, 8.75b, 10b, 15b",1
 0x5B6C72,0x374951,0x41544E,"[H] Zanras","200m, 300m, 500m, 750m, 1b, 2.5b, 4.1b, 6.5b, 10b, 15b, 20b, 30b, 40b",1
@@ -624,3 +626,44 @@
 0x1B121D,0xA98E99,0x0E0714,"[WR] Old Foes","1m, 35m, 225m, 500m, 1.5b, 15b, 21b, 43b, 50b, 75b",0
 0xA5B3B1,0x31222E,0x14131F,"[WR] Old Foes","1m, 35m, 225m, 500m, 1.5b, 15b, 21b, 43b, 50b, 75b",0
 0x65515A,0x584955,0x494355,"[WR] Old Foes","1m, 35m, 225m, 500m, 1.5b, 15b, 21b, 43b, 50b, 75b",0
+0x784C2C,0x131310,0x453813,"[WR] Spectres of the Claw","1, 100k, 100m, 500m, 3b, 7.5b, 15b, 25b, 35b, 50b, 80b, 100b, 150b, 200b, 300b, 900b, 2t, 2.5t",0
+0xDBC146,0x4F3220,0x44351B,"[WR] Spectres of the Claw","1, 100k, 100m, 500m, 3b, 7.5b, 15b, 25b, 35b, 50b, 80b, 100b, 150b, 200b, 300b, 900b, 2t, 2.5t",0
+0x171B3D,0x3F4143,0xA3968A,"Elite Yule Present Bearer","50b, 60b, 70b, 80b, 90b, 100b, *120b, 150b, 200b, 225b",0
+0x75E3F2,0x3B4E3C,0x7A6921,"[WR] Spectres of the Claw","1, 100k, 100m, 500m, 3b, 7.5b, 15b, 25b, 35b, 50b, 80b, 100b, 150b, 200b, 300b, 900b, 2t, 2.5t",0
+0x3A2A32,0x082836,0x615E68,"[WR] Ell'Shoaz'Dahaq","200m, 1b, 5b, 20b, 30b, 40b, 70b, 90b, 130b, 170b, 300b, 800b, 1t, 2.5t",0
+0x162634,0x143143,0x112423,"[WR] Ell'Shoaz'Dahaq","200m, 1b, 5b, 20b, 30b, 40b, 70b, 90b, 130b, 170b, 300b, 800b, 1t, 2.5t",0
+0x131F33,0x1E2941,0x0A5BE3,"[H] Magma Elemental","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
+0x0C1BBB,0x0F1876,0x1423B8,"[H] Magma Elemental","200m ... 960m, 1.5b, 2.4b, 2.75b, 5b, 7b, 10b, 15b",1
+0x13141F,0x2F2314,0x243A65,"[WR] Ell'Shoaz'Dahaq","200m, 1b, 5b, 20b, 30b, 40b, 70b, 90b, 130b, 170b, 300b, 800b, 1t, 2.5t",0
+0x8575AE,0x1D1B22,0x333342,"[WR] The Dark Smith","3b, 15b, 100b, 200b, 1t, 50t, 75t",0
+0x3B3F3B,0x211E28,0x221F6C,"[WR] The Dark Smith","3b, 15b, 100b, 200b, 1t, 50t, 75t",0
+0x342931,0xB54344,0x542E31,"[WR] The Dark Smith","3b, 15b, 100b, 200b, 1t, 50t, 75t",0
+0xDE8A17,0xFDFEFB,0x4E3A26,"Gate of the Underworld","300b, 500b, 1t, ^1.04t, 1.5t, 3t, *8t, 20t, 30t",0
+0x161526,0x151035,0x142B1A,"Yule Workshop","*200b, 1t, 2t, ^2.6t, 3t, *10t, 20t, 30t",0
+0x38288F,0x111C8D,0x191620,"Yule Workshop","*200b, 1t, 2t, ^2.6t, 3t, *10t, 20t, 30t",0
+0x191F1B,0xF9F9E8,0x4D5C5C,"Terracles Beetle","^1.3t, *5t, 10t, 30t, 60t, 80t",0
+0x181E28,0x0D111B,0x425C63,"Vathik","10m, 50m, 200m, 350m, 750m, 1b, 2b, 3b, 5b, 8b, 12b, 20b, 30b, 40b, 50b, 100b, 150b, 200b, 300b, 600b, 800b, 1t, 3t, 5t, 8t, 10t, 20t, 50t, 60t, 70t",0
+0x06190E,0x0D100F,0x1C1919,"Deadly Lady Vas'ok","*5t, ^6.25t, 15t, 20t, 30t, 40t, 50t, 100t, 200t, 300t, 400t, 500t, 600t, 1q",0
+0x3E3E3E,0xD6B78F,0xF4D0A9,"Deadly Drakontos","1t, *^5t,10t, 20t, 30t, 40t, 50t, 100t, 150t, 200t, 250t, 300t, 400t, 500t, 600t",0
+0x493833,0x5F5263,0x272727,"Shadow Assassins","^15.6b, *20b, 2t",0
+0x493833,0x5F5263,0x272727,"Elite Shadow Assassins","200b, 300b, 500b, *600b, 800b, 1.2t, 2t, 3t, 10t, 15t, 20t, 30t, 40t",0
+0x645E6E,0x221B1F,0x302C28,"Umbra Spider","^65b, *130b, 2.2t",0
+0xFFB153,0x6B4745,0x221F20,"Firecracker Golem","^4.22t, *5t, *10t, 15t, 30t, 50t, 70t",0
+0xFF8B57,0xB36635,0x221E13,"Demonic Gateway","250b, 500b, 1t, ^1.664t,  2t, 3t, 5t, *10t, 20t",0
+0xFCFCFC,0x717F93,0x504D57,"Pit of Bone","1b, 10b, 50b, 90b, 100b, 150b, 200b, 500b, ^569b, *1t, 2t, *5t, 10t, 20t, 40t",0
+0x343431,0x343B3C,0x5C594B,"Deadly Ragetalon","100b, 2.5t, 10t, 15,t 20t, ^37.5t, *40t, 50t, 100t, 200t, 250t, 300t, 400t, 500t, 1q, 1.5q",0
+0x06190E,0x0D100F,0x1C1919,"Lady Vas'ok","^23b, *50b, 15t",0
+0x0A1744,0x242923,0x1C2422,"Garganoth","^34.67b, *70b, 1.9t",0
+0xB8BABC,0x676A6F,0x5F422A,"Lord Rathanas","500b, ^1.3t, 2t, 3t, 5t, *8t, 10t, 15,t ",0
+0x664816,0x2B261F,0x503B23,"Elite Alchemist","200b, 500b, 800b, 2t, 5t, *10t, 30t, 40t",0
+0x201D1D,0x2C374A,0x323330,"Elite Marius","100b, *120b, 150b, 200b, 240b, 400b, 500b, 600b, 800b, 1t, 2t, 10t, 15t, 20t",0
+0xFFEDD7,0x2B2B2B,0xDBD6CE,"Deadly Drakontos","1t, *^5t,10t, 20t, 30t, 40t, 50t, 100t, 150t, 200t, 250t, 300t, 400t, 500t, 600t",0
+0xE0EBE1,0x426149,0x15261B,"[R] Thurmavus","^29.3b, *30b, 1t",0
+0x645E6E,0x221B1F,0x302C28,"Elite Umbra Spider","300b, 500b, 600b, 800b, 1t, 2t, 3t, 10t, 15t, 20t, 30t",0
+0x73484A,0x273042,0x6D697E,"Yule Workshop","*200b, 1t, 2t, ^2.6t, 3t, *10t, 20t, 30t",0
+0x141412,0x1E201E,0x1D2222,"Hydra","^650k, 2.86m, 8.45m, 11.7m",0
+0xC2A62A,0x212F2D,0x051120,"Burbata","^10m, *100m, 200m, 300m, 400m, 500m, 600m, 700m, 800m, 900m, 1b",0
+0x24323E,0x18232B,0x182128,"Bogstench","^1.8m, 2.25m, 6.39m, 16.3m, 36.9m",0
+0x9D9496,0xB8A491,0x212E45,"Hurkus","90m, ^113m, 135m, *150m, 180m, 225m, 300m, 550m, 900m",0
+0x191726,0x85BDBF,0x191818,"Baroness","^1.36m, 1.9m, 2.58m, 5.58m, 8.5m, 18.4m, 23.1m",0
+0x929085,0x3C403A,0x424C46,"Zombie Horde","^900k, 3.69m, 12.2m, 15.3m",0
